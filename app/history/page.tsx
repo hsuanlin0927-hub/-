@@ -54,27 +54,15 @@ export default function HistoryPage() {
   }, 0);
 
   return (
-    <div
-      style={{
-        padding: 16,
-        color: "white",
-        minHeight: "100vh",
-        background: "#0B0F14",
-      }}
-    >
+    <div style={{ padding: 16, color: "white", minHeight: "100vh", background: "#0B0F14" }}>
       <h1 style={{ fontSize: 28, marginBottom: 16 }}>消費記錄</h1>
 
-      <div
-        style={{
-          background: "#121821",
-          padding: 16,
-          borderRadius: 16,
-          marginBottom: 16,
-        }}
-      >
+      <div style={{ background: "#121821", padding: 16, borderRadius: 16, marginBottom: 16 }}>
         <div style={{ color: "#A8B3C7", marginBottom: 8 }}>總金額</div>
         <div style={{ fontSize: 32, fontWeight: 700 }}>¥ {total}</div>
-        <div style={{ color: "#6F7C91", marginTop: 8 }}>共 {expenses.length} 筆</div>
+        <div style={{ color: "#6F7C91", marginTop: 8 }}>
+          共 {expenses.length} 筆
+        </div>
       </div>
 
       <div style={{ display: "flex", gap: 8, marginBottom: 16 }}>
@@ -136,17 +124,14 @@ export default function HistoryPage() {
                 border: "1px solid #263042",
               }}
             >
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "space-between",
-                  marginBottom: 8,
-                }}
-              >
+              <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 8 }}>
                 <div style={{ fontWeight: 600 }}>{item}</div>
                 <div style={{ fontWeight: 700 }}>¥ {money}</div>
               </div>
-              <div style={{ color: "#6F7C91", fontSize: 13 }}>{date}</div>
+
+              <div style={{ color: "#6F7C91", fontSize: 13 }}>
+                {date}
+              </div>
             </div>
           );
         })}
