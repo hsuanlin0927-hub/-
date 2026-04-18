@@ -1,6 +1,6 @@
 export const metadata = {
   title: "Travel Planner",
-  description: "MVP 測試版",
+  description: "Personal travel planner MVP",
 };
 
 export default function RootLayout({
